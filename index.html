@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Car Gallery Using Flexbox</title>
+
+	<style>
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			font-family: Algerian;
+		}
+
+		.header {
+			text-align: center;
+			padding: 32px;
+		}
+
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0 4px;
+		}
+
+		/* Create four equal column that sits next to each other */
+		.column {
+			flex: 25%;
+			max-width: 25%;
+			padding: 0 4px;
+		}
+
+		.column img {
+			margin-top: 8px;
+			vertical-align: middle;
+		}
+
+		/* Responsive layout makes a two column layout instead of four columns */
+		@media (max-width: 800px) {
+			.column {
+				flex: 50%;
+				max-width: 50%;
+			}
+		}
+
+		/* Responsive layout makesthe two columns stack on top of each other instead of next to each other */
+		@media (max-width: 600px) {
+			.column {
+				flex: 100%;
+				max-width: 100%;
+			}
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<!---Header--->
+	<div class="header">
+		<h1>Responsive Image Gallery</h1>
+		<p>Resize the browser window to see the responsive effect.</p>
+	</div>
+
+	<!---Photo Grid--->
+	<div class="row">
+
+		<div class="column">
+			<img src="car1.jpg" style="width: 100%;">
+			<img src="car2.jpg" style="width: 100%;">
+			<img src="car3.jpg" style="width: 100%;">
+			<img src="car4.jpg" style="width: 100%;">
+			<img src="car5.jpg" style="width: 100%;">
+			<img src="car6.jpg" style="width: 100%;">
+			<img src="car7.jpg" style="width: 100%;">
+		</div>
+
+		<div class="column">
+			<img src="car8.jpg" style="width: 100%;">
+			<img src="car9.jpg" style="width: 100%;">
+			<img src="car10.jpg" style="width: 100%;">
+			<img src="car11.jpg" style="width: 100%;">
+			<img src="car12.jpg" style="width: 100%;">
+			<img src="car13.jpg" style="width: 100%;">
+			<img src="car14.jpg" style="width: 100%;">
+		</div>
+
+		<div class="column">
+			<img src="car15.jpg" style="width: 100%;">
+			<img src="car16.jpg" style="width: 100%;">
+			<img src="car17.jpg" style="width: 100%;">
+			<img src="car18.jpg" style="width: 100%;">
+			<img src="car19.jpg" style="width: 100%;">
+			<img src="car20.jpg" style="width: 100%;">
+			<img src="car21.jpg" style="width: 100%;">
+		</div>
+
+		<div class="column">
+			<img src="car22.jpg" style="width: 100%;">
+			<img src="car23.jpg" style="width: 100%;">
+			<img src="car24.jpg" style="width: 100%;">
+			<img src="car25.jpg" style="width: 100%;">
+			<img src="car26.jpg" style="width: 100%;">
+			<img src="car27.jpg" style="width: 100%;">
+			<img src="car1.jpg" style="width: 100%;">
+		</div>
+
+
+	</div>
+
+</body>
+</html>
